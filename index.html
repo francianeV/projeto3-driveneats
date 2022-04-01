@@ -25,34 +25,35 @@
 
     <!-- MENU DOS PRATOS -->
     <div class="corpo-pedido">
-    <div class="menus primeiro">
-        <div class="titulo">Primeiro, seu prato</div>
+    <div class="titulo primeiro">Primeiro, seu prato</div>
+    <div class="menus">
         <div class="escolhas">
-        <div class="opcao">
+        <div class="opcao" onclick="escolherPrato(this)">
             <img src="imagens/frango_yin_yang 1.png" />
             <h3>Frango Yin Yang</h3>
             <h4>Um pouco de batata, um pouco de salada</h4>
             <h5>R$ 14,90</h5>
+            <i class="fa-solid fa-circle-check"></i>
         </div>
-        <div class="opcao">
+        <div class="opcao" onclick="escolherPrato(this)">
             <img src="imagens/sushi.png" />
             <h3>Combo de Sushi</h3>
             <h4>12 unidades de sushi diversos</h4>
             <h5>R$ 20,90</h5>
         </div>
-        <div class="opcao">
+        <div class="opcao" onclick="escolherPrato(this)">
             <img src="imagens/hamburguer.png" />
             <h3>Hamburguer</h3>
             <h4>hamburguer artesal com molho da casa</h4>
             <h5>R$ 18,00</h5>
         </div>
-        <div class="opcao">
+        <div class="opcao" onclick="escolherPrato(this)"> 
             <img src="imagens/salada.png" />
             <h3>Salada</h3>
             <h4>Mix de salada com molho</h4>
             <h5>R$ 15,90</h5>
         </div>
-        <div class="opcao">
+        <div id="prato" class="opcao" onclick="escolherPrato(this)">
             <img src="imagens/prato-feito.png" />
             <h3>Prato feito</h3>
             <h4>Prato feito com frango grelhado</h4>
@@ -62,34 +63,34 @@
     </div>
 
     <!-- MENU DAS BEBIDAS -->
+    <div class="titulo outra-opcao">Agora, sua bebida</div>
     <div class="menus">
-        <div class="titulo outra-opcao">Agora, sua bebida</div>
         <div class="escolhas">
-        <div class="opcao">
+        <div id="coca" class="opcao" onclick="escolherBebida(this)">
             <img src="imagens/coquinha_gelada 1.png" />
             <h3>Coquinha gelada</h3>
             <h4>Lata 350ml</h4>
             <h5>R$ 5,00</h5>
         </div>
-        <div class="opcao">
+        <div id="guarana" class="opcao" onclick="escolherBebida(this)">
             <img src="imagens/guarana-lata.png" />
             <h3>Guarana Antartica</h3>
             <h4>Lata 350ml</h4>
             <h5>R$ 6,00</h5>
         </div>
-        <div class="opcao">
+        <div id="kuat" class="opcao" onclick="escolherBebida(this)">
             <img src="imagens/kuat.png" />
             <h3>Kuat Guarana</h3>
             <h4>Garafa 1,5L</h4>
             <h5>R$ 9,00</h5>
         </div>
-        <div class="opcao">
+        <div id="garafa" class="opcao" onclick="escolherBebida(this)">
             <img src="imagens/coca-garafa.png" />
             <h3>Coca Garafa</h3>
             <h4>Garafa 2L</h4>
             <h5>R$ 12,00</h5>
         </div>
-        <div class="opcao">
+        <div id="suco" class="opcao" onclick="escolherBebida(this)">
             <img src="imagens/suco.png" />
             <h3>Suco natural</h3>
             <h4>Copo 200ml</h4>
@@ -99,34 +100,34 @@
     </div>
 
     <!-- MENU DAS SOBREMESAS -->
+    <div class="titulo outra-opcao">Por fim, sua sobremesa</div>
     <div class="menus">
-        <div class="titulo outra-opcao">Por fim, sua sobremesa</div>
         <div class="escolhas">
-        <div class="opcao">
+        <div class="opcao" onclick="escolherSobremesa(this)">
             <img src="imagens/pudim 1.png" />
             <h3>Pudim</h3>
             <h4>Apenas pudim</h4>
             <h5>R$ 7,90</h5>
         </div>
-        <div class="opcao">
+        <div class="opcao" onclick="escolherSobremesa(this)">
             <img src="imagens/Sunday.png" />
             <h3>Taça de sorvete</h3>
             <h4>Acompanha complementos</h4>
             <h5>R$ 15,00</h5>
         </div>
-        <div class="opcao">
+        <div class="opcao" onclick="escolherSobremesa(this)">
             <img src="imagens/brownie.png" />
             <h3>Brownie</h3>
             <h4>Acompanha sorvete de creme</h4>
             <h5>R$ 9,90</h5>
         </div>
-        <div class="opcao">
+        <div class="opcao" onclick="escolherSobremesa(this)">
             <img src="imagens/cupcake.jpeg" />
             <h3>Cupcake</h3>
             <h4>Red Velvet e cream cheese</h4>
             <h5>R$ 5,90</h5>
         </div>
-        <div class="opcao">
+        <div class="opcao" onclick="escolherSobremesa(this)">
             <img src="imagens/tiramisu.png" />
             <h3>Tiramisu</h3>
             <h4>Delicioso tiramisu</h4>
@@ -140,5 +141,7 @@
         <button>Selecione os 3 itens para fechar o pedido</button>
     </div>
 </div>
+
+<script src="scripts.js"></script>
 </body>
 </html>
