@@ -182,7 +182,6 @@ h5{
     background: #CBCBCB;
     border-radius: 50px;
     border: #CBCBCB;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -191,13 +190,12 @@ h5{
     text-align: center;
     letter-spacing: 0.018em;
     color: #FFFFFF;
-
 }
 
 .selecionado {
     border: 5px solid green;
-    content: \f058;
 
     
 }
+
 

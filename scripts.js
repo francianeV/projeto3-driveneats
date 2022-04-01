@@ -1,4 +1,9 @@
+
+let escolha;
+
 function escolherPrato(prato){
+    let elemento = document.querySelector("h3");
+    escolha = elemento.innerHTML;
     const pratoSelecionado = document.querySelector(".selecionado");
     if(pratoSelecionado !== null){
         pratoSelecionado.classList.remove("selecionado");
@@ -25,5 +30,12 @@ function escolherSobremesa(sobremesa){
     }
 
     sobremesa.classList.add("selecionado");
+
+}
+
+document.querySelector(".botao").disabled=true;
+
+function finalizarPedido(){
+    alert(escolha)
 
 }
