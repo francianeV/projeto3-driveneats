@@ -1,20 +1,19 @@
-body{
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Righteous', cursive;
-    width: 414px;
-}
-
 * {
     box-sizing: border-box;
   }
 
-
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Righteous', cursive;
+    
+}
+/*
 .corpo-todo{
     width: 414px;
     height: 100%;
     background-color: #E5E5E5;
 }
-
+*/
 
 img{
     width: 144px;
@@ -86,7 +85,7 @@ h5{
 }
 
 .topo{
-    width: 414px;
+    width: 100%;
     height: 92px;
     background: #CF2B2B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -104,13 +103,17 @@ h5{
 }
 
 .menus{
-    width: 414px;
+    width: 100%;
     height: 260px;
     padding: 0 20px;
     overflow-x: scroll; 
     display: flex;
     justify-content: space-between;
     margin-right: 1px;
+}
+
+.menus .ultimo{
+    margin-bottom: 400px;
 }
 
 
@@ -142,6 +145,7 @@ h5{
 
 .escolhas{
     display: flex;
+    justify-content: space-between;
     
 }
 
@@ -162,8 +166,35 @@ h5{
 
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 92px;
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.466);
+}
 
-.pedido{
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CBCBCB;
+    width: 88%;
+    height: 68%;
+    border-radius: 50px;
+}
+
+footer p{
+    color: white;
+    font-size: 1.2em;
+}
+/*
+.gray-button{
     width: 414px;
     height: 92px;
     background: #FFFFFF;
@@ -176,7 +207,7 @@ h5{
     z-index: 1;
 }
 
-.pedido > button{
+.gray-button{
     width: 364px;
     height: 61px;
     background: #CBCBCB;
@@ -191,8 +222,21 @@ h5{
     letter-spacing: 0.018em;
     color: #FFFFFF;
 }
+*/
+.finish-order{
+    background-color: #32B72F;
+    cursor: pointer;
+    animation: float 1s ease-in-out infinite;
+}
 
-.selecionado {
+.finish-order:hover{
+    background-color: #248722;
+}
+.hidden{
+    display: none;
+}
+
+.selected-plate, .selected-drink, .selected-dessert {
     border: 5px solid green;
 
     
