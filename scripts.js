@@ -146,8 +146,7 @@ function escolherSobremesa(sobremesa){
 
 }
 let totCompra = 0;
-function finishOrder(){
-    totCompra = valueDessert + valueDrink + valuePlate;
+function sendOrder(){
     let nome = prompt("Qual o seu nome? ");
     let endereco = prompt("Forneça o endereço de entrega: ")
 
@@ -156,5 +155,32 @@ function finishOrder(){
     "Total: R$: " + totCompra.toFixed(2) + "\n " + "Nome: " + nome + "\n" + "Endereço: " + endereco;
 
     window.open("https://wa.me/5512996768941?text=" + encodeURIComponent(messageWpp));
+
+}
+
+function cancelaPedido(){
+    let revisao = document.getElementById("revisao");
+    revisao.style.display = "none";
+  }
+
+
+function finishOrder(){
+    totCompra = valueDessert + valueDrink + valuePlate;
+    let revisao = document.getElementById("revisao");
+    revisao.style.display = "block";
+
+    /*document.querySelector(".revisar-pedido").style.display = block;
+    /*document.querySelector(".revisar-pedido").classList.remove("hidden");*/
+
+    document.querySelector(".prato-selecionado").innerHTML = plate;
+    document.querySelector(".valor-prato").innerHTML = valuePlate.toFixed(2);
+  
+    document.querySelector(".bebida-selecionada").innerHTML = drink;
+    document.querySelector(".valor-bebida").innerHTML = valueDrink.toFixed(2);
+  
+    document.querySelector(".sobremesa-selecionada").innerHTML = dessert;
+    document.querySelector(".valor-sobremesa").innerHTML = valueDessert.toFixed(2);
+  
+    document.querySelector(".valor-total").innerHTML = totCompra.toFixed(2);
 
 }

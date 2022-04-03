@@ -16,6 +16,38 @@
 <title>DrivenEats</title>
 </head>
 <body>
+    <div id="revisao" class="revisar-pedido">
+        <div class="lista-final">
+            <h3><strong>Confirme seu pedido</strong></h3>
+            <br>
+            <div>
+                <p class="prato-selecionado"></p>
+                <p class="valor-prato"></p>
+            </div>
+            <br>
+            <div>
+                <p class="bebida-selecionada"></p>
+                <p class="valor-bebida"></p>
+            </div>
+            <br>
+            <div>
+                <p class="sobremesa-selecionada"></p>
+                <p class="valor-sobremesa"></p>
+            </div>
+            <br>
+            <div>
+                <p><strong>TOTAL</strong></p>
+                <p class="valor-total"></p>
+            </div>
+
+            <div class="botoes-opcoes">
+            <div class="confirma-pedido" onclick="sendOrder()"><strong>Tudo certo, pode pedir!</strong></div>
+            <div class="cancelar-pedido" onclick="cancelaPedido()">Cancelar</div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="corpo-todo">
     <!-- TOPO -->
     <div class="topo">
@@ -147,8 +179,7 @@
         <p>Finalizar Pedido</p>
     </div>
 
-</footer>
-    
+</footer> 
 
 <script src="scripts.js"></script>
 </body>
