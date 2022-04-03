@@ -148,10 +148,12 @@ function escolherSobremesa(sobremesa){
 let totCompra = 0;
 function finishOrder(){
     totCompra = valueDessert + valueDrink + valuePlate;
+    let nome = prompt("Qual o seu nome? ");
+    let endereco = prompt("Forneça o endereço de entrega: ")
 
     let messageWpp = "Olá, gostaria de fazer o pedido: " + "\n" + "- Prato: " + plate + "\n" +
     "- Bebida: " + drink + "\n" + " - Sobremesa: " + dessert + "\n" + 
-    "Total: R$: " + totCompra.toFixed(2);
+    "Total: R$: " + totCompra.toFixed(2) + "\n " + "Nome: " + nome + "\n" + "Endereço: " + endereco;
 
     window.open("https://wa.me/5512996768941?text=" + encodeURIComponent(messageWpp));
 
