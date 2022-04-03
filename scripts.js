@@ -5,9 +5,11 @@ function escolherPrato(prato){
     const pratoSelecionado = document.querySelector(".selected-plate");
     if(pratoSelecionado !== null){
         pratoSelecionado.classList.remove("selected-plate");
+
     }
 
     prato.classList.add("selected-plate");
+
 
     let isFrango = prato.classList.contains("frango");
     let isSushi = prato.classList.contains("sushi");
@@ -130,7 +132,7 @@ function escolherSobremesa(sobremesa){
         valueDessert = 5.90;
 
     }else if(isTiramisu){
-        dessert = "Prato feito";
+        dessert = "Tiramisu";
         valueDessert = 11.90;
 
     }else{
@@ -147,14 +149,18 @@ function escolherSobremesa(sobremesa){
 }
 let totCompra = 0;
 function sendOrder(){
-    let nome = prompt("Qual o seu nome? ");
-    let endereco = prompt("Forneça o endereço de entrega: ")
+    const nome = prompt("Qual o seu nome? ");
+    const endereco = prompt("Forneça o endereço de entrega: ")
 
-    let messageWpp = "Olá, gostaria de fazer o pedido: " + "\n" + "- Prato: " + plate + "\n" +
-    "- Bebida: " + drink + "\n" + " - Sobremesa: " + dessert + "\n" + 
-    "Total: R$: " + totCompra.toFixed(2) + "\n " + "Nome: " + nome + "\n" + "Endereço: " + endereco;
+    const uri = `Olá, gostaria de fazer o pedido:\n
+    - Prato: ${plate}\n
+    - Bebida: ${drink}\n
+    - Sobremesa: ${dessert}\n 
+    Total: R$: ${totCompra.toFixed(2)}\n
+    Nome: ${nome}\n
+    Endereço: ${endereco}`
 
-    window.open("https://wa.me/5512996768941?text=" + encodeURIComponent(messageWpp));
+    window.open("https://wa.me/5512996768941?text=" + encodeURIComponent(uri));
 
 }
 
@@ -168,9 +174,6 @@ function finishOrder(){
     totCompra = valueDessert + valueDrink + valuePlate;
     let revisao = document.getElementById("revisao");
     revisao.style.display = "block";
-
-    /*document.querySelector(".revisar-pedido").style.display = block;
-    /*document.querySelector(".revisar-pedido").classList.remove("hidden");*/
 
     document.querySelector(".prato-selecionado").innerHTML = plate;
     document.querySelector(".valor-prato").innerHTML = valuePlate.toFixed(2);
