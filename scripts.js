@@ -157,6 +157,7 @@ function sendOrder(){
     - Bebida: ${drink}
     - Sobremesa: ${dessert}
     Total: R$: ${totCompra.toFixed(2)}
+    
     Nome: ${nome}
     Endereço: ${endereco}`
 
