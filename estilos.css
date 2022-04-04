@@ -8,13 +8,7 @@ body{
     
     
 }
-/*
-.corpo-todo{
-    width: 414px;
-    height: 100%;
-    background-color: #E5E5E5;
-}
-*/
+
 
 strong{
     font-weight: 700;
@@ -212,36 +206,7 @@ footer p{
     color: white;
     font-size: 1.2em;
 }
-/*
-.gray-button{
-    width: 414px;
-    height: 92px;
-    background: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-}
 
-.gray-button{
-    width: 364px;
-    height: 61px;
-    background: #CBCBCB;
-    border-radius: 50px;
-    border: #CBCBCB;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.018em;
-    color: #FFFFFF;
-}
-*/
 .finish-order{
     background-color: #32B72F;
     cursor: pointer;
